@@ -1,0 +1,492 @@
+{
+  "status": "200",
+  "data": {
+    "Header": {
+      "name": "Travel Preapproval Process 2.0",
+      "description": "",
+      "richDescription": "",
+      "ID": "25.fdc51ae5-14c4-4159-8a42-993010065cec"
+    },
+    "DataModel": {
+      "properties": {},
+      "inputs": {
+        "Event": {
+          "type": "String",
+          "isList": false,
+          "description": "Conference, course, workshop... that will be attended during travel",
+          "richDescription": "<html><body>Conference, course, workshop... that will be attended during travel</body></html>"
+        },
+        "Start_date": {
+          "type": "Date",
+          "isList": false,
+          "description": "First date of travel",
+          "richDescription": "<html><body>First date of travel</body></html>"
+        },
+        "End_date": {
+          "type": "Date",
+          "isList": false,
+          "description": "Last date of travel",
+          "richDescription": "<html><body>Last date of travel</body></html>"
+        },
+        "Justification": {
+          "type": "String",
+          "isList": false,
+          "description": "Reason for travel",
+          "richDescription": "<html><body>Reason for travel</body></html>"
+        },
+        "Manager_approval": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Director_approval": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Manager_feedback": {
+          "type": "String",
+          "isList": false
+        },
+        "Director_feedback": {
+          "type": "String",
+          "isList": false
+        },
+        "Applicant_name": {
+          "type": "String",
+          "isList": false
+        },
+        "Manager_name": {
+          "type": "String",
+          "isList": false
+        },
+        "Director_name": {
+          "type": "String",
+          "isList": false
+        },
+        "Manager_rejection": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Director_rejection": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Manager_send_back": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Director_send_back": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Requested_amount": {
+          "type": "Decimal",
+          "isList": false
+        },
+        "Event_location": {
+          "type": "String",
+          "isList": false,
+          "description": "The destination of the applicant's travel request where the event will be held.",
+          "richDescription": "<html><body>The destination of the applicant's travel request where the event will be held.</body></html>"
+        },
+        "Applicant_location": {
+          "type": "String",
+          "isList": false,
+          "description": "The office location of the applicant (from where they will fly out)",
+          "richDescription": "<html><body>The office location of the applicant (from where they will fly out)</body></html>"
+        },
+        "Papers_list": {
+          "type": "String",
+          "isList": false,
+          "description": "List the papers that have been accepted at the conference (if the event is a conference or workshop...). Separate papers with semi-colon.",
+          "richDescription": "<html><body>List the papers that have been accepted at the conference (if the event \nis a conference or workshop...). Separate papers with semi-colon.</body></html>"
+        },
+        "Send_back_applicant": {
+          "type": "Boolean",
+          "isList": false
+        }
+      },
+      "outputs": {
+        "Event": {
+          "type": "String",
+          "isList": false,
+          "description": "Conference, course, workshop... that will be attended during travel",
+          "richDescription": "<html><body>Conference, course, workshop... that will be attended during travel</body></html>"
+        },
+        "Start_date": {
+          "type": "Date",
+          "isList": false,
+          "description": "First date of travel",
+          "richDescription": "<html><body>First date of travel</body></html>"
+        },
+        "End_date": {
+          "type": "Date",
+          "isList": false,
+          "description": "Last date of travel",
+          "richDescription": "<html><body>Last date of travel</body></html>"
+        },
+        "Justification": {
+          "type": "String",
+          "isList": false,
+          "description": "Reason for travel",
+          "richDescription": "<html><body>Reason for travel</body></html>"
+        },
+        "Manager_approval": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Director_approval": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Manager_feedback": {
+          "type": "String",
+          "isList": false
+        },
+        "Director_feedback": {
+          "type": "String",
+          "isList": false
+        },
+        "Applicant_name": {
+          "type": "String",
+          "isList": false
+        },
+        "Manager_name": {
+          "type": "String",
+          "isList": false
+        },
+        "Director_name": {
+          "type": "String",
+          "isList": false
+        },
+        "Manager_rejection": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Director_rejection": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Manager_send_back": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Director_send_back": {
+          "type": "Boolean",
+          "isList": false
+        },
+        "Requested_amount": {
+          "type": "Decimal",
+          "isList": false,
+          "description": "Dollar amount requested for travel",
+          "richDescription": "<html><body>Dollar amount requested for travel</body></html>"
+        },
+        "Event_location": {
+          "type": "String",
+          "isList": false,
+          "description": "The destination of the applicant's travel request where the event will be held.",
+          "richDescription": "<html><body>The destination of the applicant's travel request where the event will be held. </body></html>"
+        },
+        "Applicant_location": {
+          "type": "String",
+          "isList": false,
+          "description": "The office location of the applicant (from where they will fly out)",
+          "richDescription": "<html><body>The office location of the applicant (from where they will fly out)</body></html>"
+        },
+        "Papers_list": {
+          "type": "String",
+          "isList": false,
+          "description": "List the papers that have been accepted at the conference (if the event is a conference or workshop...). Separate papers with semi-colon.",
+          "richDescription": "<html><body>List the papers that have been accepted at the conference (if the event is a conference or workshop...). Separate papers with semi-colon. </body></html>"
+        },
+        "Send_back_applicant": {
+          "type": "Boolean",
+          "isList": false
+        }
+      },
+      "validation": {
+        "Decimal": {
+          "richDescription": "Decimal Type",
+          "description": "Decimal Type",
+          "ID": "12.536b2aa5-a30f-4eca-87fa-3a28066753ee",
+          "type": "decimal"
+        },
+        "String": {
+          "richDescription": "String Type",
+          "description": "String Type",
+          "ID": "12.db884a3c-c533-44b7-bb2d-47bec8ad4022",
+          "type": "string"
+        },
+        "Boolean": {
+          "richDescription": "Boolean Type",
+          "description": "Boolean Type",
+          "ID": "12.83ff975e-8dbc-42e5-b738-fa8bc08274a2",
+          "type": "boolean"
+        },
+        "Date": {
+          "richDescription": "Date Type",
+          "description": "Date Type",
+          "ID": "12.68474ab0-d56f-47ee-b7e9-510b45a2a8be",
+          "type": "date"
+        }
+      }
+    },
+    "Diagram": {
+      "processAppID": "2066.1a49738c-d241-4da9-a641-dbf70b7ebb74",
+      "milestone": null,
+      "step": [
+        {
+          "name": "Travel pre-approval application",
+          "type": "activity",
+          "activityType": "task",
+          "externalID": "1.33c82309-8d87-443d-b0e2-e96bfd68e797",
+          "diagram": null,
+          "lane": "Employee",
+          "x": 126,
+          "y": 57,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": [
+            {
+              "to": "0da1ae01-a534-48e3-ad24-f2c63bc853fd",
+              "points": "",
+              "tokenID": null,
+              "name": "Submit"
+            }
+          ],
+          "tokenID": null,
+          "taskID": null,
+          "ID": "1e5cdca7-bbe6-4518-9d81-3616f67f51d5"
+        },
+        {
+          "name": "Applicant - Revise application",
+          "type": "activity",
+          "activityType": "task",
+          "externalID": "1.6a8ab76c-4d15-4656-8536-c1ceea082f04",
+          "diagram": null,
+          "lane": "Employee",
+          "x": 361,
+          "y": 59,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": [
+            {
+              "to": "0da1ae01-a534-48e3-ad24-f2c63bc853fd",
+              "points": "",
+              "tokenID": null,
+              "name": "Resubmit"
+            }
+          ],
+          "tokenID": null,
+          "taskID": null,
+          "ID": "4c02111a-dbe5-49a5-bd4d-6be08b6af3c2"
+        },
+        {
+          "name": "Start",
+          "type": "event",
+          "activityType": null,
+          "externalID": null,
+          "diagram": null,
+          "lane": "Employee",
+          "x": 25,
+          "y": 80,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": [
+            {
+              "to": "1e5cdca7-bbe6-4518-9d81-3616f67f51d5",
+              "points": "",
+              "tokenID": null,
+              "name": "To Travel pre-approval application"
+            }
+          ],
+          "tokenID": null,
+          "taskID": null,
+          "ID": "7120ada0-3814-478c-9b01-670d9b3f1bcf"
+        },
+        {
+          "name": "Manager - Review application",
+          "type": "activity",
+          "activityType": "task",
+          "externalID": "1.75fd6b9a-f44a-45dc-9a06-b832f3830428",
+          "diagram": null,
+          "lane": "Manager",
+          "x": 252,
+          "y": 37,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": [
+            {
+              "to": "4c02111a-dbe5-49a5-bd4d-6be08b6af3c2",
+              "points": "",
+              "tokenID": null,
+              "name": "Send_back"
+            },
+            {
+              "to": "1e74811d-60f5-4215-bf02-663823805354",
+              "points": "",
+              "tokenID": null,
+              "name": "Reject"
+            },
+            {
+              "to": "663127a1-4391-4565-bd05-e1b62e342a8f",
+              "points": "",
+              "tokenID": null,
+              "name": "Accept"
+            }
+          ],
+          "tokenID": null,
+          "taskID": null,
+          "ID": "0da1ae01-a534-48e3-ad24-f2c63bc853fd"
+        },
+        {
+          "name": "Manager - Revise application",
+          "type": "activity",
+          "activityType": "task",
+          "externalID": "1.6a8ab76c-4d15-4656-8536-c1ceea082f04",
+          "diagram": null,
+          "lane": "Manager",
+          "x": 737,
+          "y": 52,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": [
+            {
+              "to": "4c02111a-dbe5-49a5-bd4d-6be08b6af3c2",
+              "points": "",
+              "tokenID": null,
+              "name": "Send back to applicant"
+            },
+            {
+              "to": "663127a1-4391-4565-bd05-e1b62e342a8f",
+              "points": "",
+              "tokenID": null,
+              "name": "Resubmit"
+            }
+          ],
+          "tokenID": null,
+          "taskID": null,
+          "ID": "c3cd974d-6151-4a74-87f9-44ad7affea2d"
+        },
+        {
+          "name": "Manager_Rejected",
+          "type": "event",
+          "activityType": null,
+          "externalID": null,
+          "diagram": null,
+          "lane": "Manager",
+          "x": 371,
+          "y": 127,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": null,
+          "tokenID": null,
+          "taskID": null,
+          "ID": "1e74811d-60f5-4215-bf02-663823805354"
+        },
+        {
+          "name": "Director - Review application",
+          "type": "activity",
+          "activityType": "task",
+          "externalID": "1.75fd6b9a-f44a-45dc-9a06-b832f3830428",
+          "diagram": null,
+          "lane": "Director",
+          "x": 649,
+          "y": 31,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": [
+            {
+              "to": "c3cd974d-6151-4a74-87f9-44ad7affea2d",
+              "points": "",
+              "tokenID": null,
+              "name": "Send_back"
+            },
+            {
+              "to": "9b604f2a-d0e6-4139-aa44-6e0dccde993f",
+              "points": "",
+              "tokenID": null,
+              "name": "Reject"
+            },
+            {
+              "to": "ee37eac2-edfc-46c1-bdfc-138a7c15d3d5",
+              "points": "",
+              "tokenID": null,
+              "name": "Accept"
+            }
+          ],
+          "tokenID": null,
+          "taskID": null,
+          "ID": "663127a1-4391-4565-bd05-e1b62e342a8f"
+        },
+        {
+          "name": "Director_Approved",
+          "type": "event",
+          "activityType": null,
+          "externalID": null,
+          "diagram": null,
+          "lane": "Director",
+          "x": 878,
+          "y": 58,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": null,
+          "tokenID": null,
+          "taskID": null,
+          "ID": "ee37eac2-edfc-46c1-bdfc-138a7c15d3d5"
+        },
+        {
+          "name": "Director_Rejected",
+          "type": "event",
+          "activityType": null,
+          "externalID": null,
+          "diagram": null,
+          "lane": "Director",
+          "x": 774,
+          "y": 119,
+          "attachedTimer": null,
+          "preTrackingPoint": null,
+          "postTrackingPoint": null,
+          "attachedEventHandler": null,
+          "lines": null,
+          "tokenID": null,
+          "taskID": null,
+          "ID": "9b604f2a-d0e6-4139-aa44-6e0dccde993f"
+        }
+      ],
+      "lanes": [
+        {
+          "name": "Employee",
+          "height": 200,
+          "system": false
+        },
+        {
+          "name": "Manager",
+          "height": 200,
+          "system": true
+        },
+        {
+          "name": "Director",
+          "height": 200,
+          "system": false
+        }
+      ],
+      "orphaned": null
+    }
+  }
+}
